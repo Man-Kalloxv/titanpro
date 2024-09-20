@@ -1,0 +1,13 @@
+.navbar{
+    background-color: blue;
+}
+li:hover{
+    color: rgb(244, 27, 27);
+    font-size: 20px;
+}
+p{
+    font-weight: bold;
+}
+td{
+    padding: 2px;
+}

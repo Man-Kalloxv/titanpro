@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="uni.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-primary sticky-top " style="background-color: blue;"  >
+  
+            <div class="container">
+                <p class="navbar-brand href=# " style="color: bisque; font-weight: bold;">JAVASCRIPT</p>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" style="background-color: bisque;">
+                <span class="navbar-toggler-icon" style="background-color: bisque;"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-tertiary show " tabindex="-1" id="offcanvasNavbar" aria-modal="true" role="dialog" style="background-color: blue;">
+                <div class="offcanvas-header">
+                <h4 class="offcanvas-title" id="offcanvasNavbarlabel" style="color: bisque;">JAVASCRIPT</h4>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="close"></button>
+            </div>
+            <div class="offcanvas-body" style="list-style-type: none; " >
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-2  " style="font-weight: bold; ">
+                <li class="nav-item" >
+                <a class="nav-link active" href="index.html" style="color: bisque;" >Day 1</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link active" href="boss.html" style="color: bisque;">Day 2</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link active" href="job.html" style="color: bisque;">Day 3</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link active" href="" style="color: bisque;">Day 4</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link active" href="" style="color: bisque;">Day 5</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link active" href="" style="color: bisque;">Day 6</a>
+                </li>
+            </ul>
+            </div>
+            </div>
+    </nav>
+
+    <h3 style="text-align: center; margin-top: 50px;">Assignment</h3>
+    <div class="container" style="background-color: rgb(0, 0, 255,0.3); margin: 60px auto; color: brown;">
+        <h1 style="text-align: center;">SCORES</h1>
+
+            const myusers = [ <br>
+             {
+               name:'Brook', <br>
+               scores:75, <br>
+               skills:['HTMl', 'CSS', 'JS'], <br>
+               age:16 <br>
+             },<br>
+             {
+               name:'Alex', <br>
+               scores:80, <br>
+               skills:['HTML', 'CSS', 'JS', 'REACT'], <br>
+               age:18 <br>
+             }, <br>
+             {
+               name:'David', <br>
+               scores:75, <br>
+               skills:['HTML', 'CSS'], <br>
+               age:22 <br>
+             }, <br>
+             {
+               name:'John', <br>
+               scores:85, <br>
+               skills:['HTML'], <br>
+               age:25 <br>
+             }, <br>
+             {
+               name:'Sara', <br>
+               scores:95, <br>
+               skills:['HTML', 'CSS', 'JS'], <br>
+               age: 26 <br>
+             }, <br>
+             {
+               name:'Martha', <br>
+               scores:80, <br>
+               skills:['HTML', 'CSS', 'JS'], <br>
+               age:18 <br>
+             },<br>
+             {
+               name:'Matthew', <br>
+               scores:60, <br>
+               skills:[], <br>
+               age:22 <br>
+             },<br>
+             {
+               name:'Thomas', <br>
+               scores:90, <br>
+               skills:['HTML', 'CSS', 'DART', 'KOTLIN'], <br>
+               age:20 <br>
+             },<br>
+             {
+               name:'Promise', <br>
+               scores:90, <br>
+               skills:['HTML', 'CSS', 'JS', 'FLUTTER'], <br>
+               age:20 <br>
+             } 
+          ] <br>
+          
+          
+                  alert(`With results of the Students studying frontend web development being released above, <br> I can confirm that ${myusers[4].name} aged ${myusers[4].age} has acheived a score of <br> ${myusers[4].scores} and is the highest score acheiver.`) <br><br>
+
+                  <h1 style="text-align: center;">RESTAURANT</h1>
+
+                  let restaurant = { <br>
+                    name: 'Food Mataz', <br>
+                    Africadish: { <br>
+                    swallow: ['eba', 'fufu', 'akpu'], <br>
+                    soup: ['egusi', 'okra', 'fida'], <br>
+                    meat: ['beef', 'chicken', 'afish'], <br>
+                    },
+                    chinesedish: { <br>
+                    meat: ['beef', 'chicken'], <br>
+                    rice: ['chinese rice', 'white rice'] <br>
+                    },
+                    drink: ['origin', 'coke', 'fanta'], <br>
+                    amount: '#3000', <br>
+                    location: 'uiibadan', <br>
+                    };
+                    confirm(`I need two ${restaurant.Africadish.swallow[0]}, and ${restaurant.Africadish.soup[0]} two thighs of ${restaurant.Africadish.meat[1]}, also I would like some ${restaurant.chinesedish.rice[0]} with 2 pieces of ${restaurant.chinesedish.meat[0]}, and one ${restaurant.drink[1]} from ${restaurant.name} located at ${restaurant.location} everything should be ${restaurant.amount}`)
+              
+    </div>
+    <script>
+        const myusers = [
+         {
+           name:'Brook',
+           scores:75,
+           skills:['HTMl', 'CSS', 'JS'],
+           age:16
+         },
+         {
+           name:'Alex',
+           scores:80,
+           skills:['HTML', 'CSS', 'JS', 'REACT'],
+           age:18
+         },
+         {
+           name:'David',
+           scores:75,
+           skills:['HTML', 'CSS'],
+           age:22
+         },
+         {
+           name:'John',
+           scores:85,
+           skills:['HTML'],
+           age:25
+         },
+         {
+           name:'Sara',
+           scores:95,
+           skills:['HTML', 'CSS', 'JS'],
+           age: 26
+         },
+         {
+           name:'Martha',
+           scores:80,
+           skills:['HTML', 'CSS', 'JS'],
+           age:18
+         },
+         {
+           name:'Matthew',
+           scores:60,
+           skills:[],
+           age:22
+         },
+         {
+           name:'Thomas',
+           scores:90,
+           skills:['HTML', 'CSS', 'DART', 'KOTLIN'],
+           age:20
+         },
+         {
+           name:'Promise',
+           scores:90,
+           skills:['HTML', 'CSS', 'JS', 'FLUTTER'],
+           age:20
+         }
+      ]
+      
+      
+              alert(`With results of the Students studying frontend web development being released above, I can confirm that ${myusers[4].name} aged ${myusers[4].age} has acheived a score of ${myusers[4].scores} and is the highest score acheiver.`)
+          </script>
+
+          <script>
+            let restaurant = {
+                        name: 'Food Mataz',
+                        Africadish: {
+                        swallow: ['eba', 'fufu', 'akpu'],
+                        soup: ['egusi', 'okra', 'fida'],
+                        meat: ['beef', 'chicken', 'afish'],
+                        },
+                        chinesedish: {
+                        meat: ['beef', 'chicken'],
+                        rice: ['chinese rice', 'white rice']
+                        },
+                        drink: ['origin', 'coke', 'fanta'],
+                        amount: '#3000',
+                        location: 'uiibadan',
+                        };
+                        confirm(`I need two ${restaurant.Africadish.swallow[0]}, and ${restaurant.Africadish.soup[0]} two thighs of ${restaurant.Africadish.meat[1]}, also I would like some ${restaurant.chinesedish.rice[0]} with 2 pieces of ${restaurant.chinesedish.meat[0]}, and one ${restaurant.drink[1]} from ${restaurant.name} located at ${restaurant.location} everything should be ${restaurant.amount}`)
+
+          </script>
+</body>
+</html>

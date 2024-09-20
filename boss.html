@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document | Home</title>
+    <link rel="stylesheet" href="uni.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-primary sticky-top " style="background-color: blue;"  >
+  
+    <div class="container">
+     <p class="navbar-brand href=# " style="color: bisque; font-weight: bold;">JAVASCRIPT</p>
+    </div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" style="background-color: bisque;">
+     <span class="navbar-toggler-icon" style="background-color: bisque;"></span>
+    </button>
+    <div class="offcanvas offcanvas-end text-bg-tertiary show " tabindex="-1" id="offcanvasNavbar" aria-modal="true" role="dialog" style="background-color: blue;">
+     <div class="offcanvas-header">
+       <h4 class="offcanvas-title" id="offcanvasNavbarlabel" style="color: bisque;">JAVASCRIPT</h4>
+       <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="close"></button>
+     </div>
+     <div class="offcanvas-body" style="list-style-type: none; " >
+       <ul class="navbar-nav justify-content-end flex-grow-1 pe-2  " style="font-weight: bold; ">
+         <li class="nav-item" >
+           <a class="nav-link active" href="index.html" style="color: bisque;" >Day 1</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link active" href="boss.html" style="color: bisque;">Day 2</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link active" href="job.html" style="color: bisque;">Day 3</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link active" href="" style="color: bisque;">Day 4</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link active" href="" style="color: bisque;">Day 5</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link active" href="" style="color: bisque;">Day 6</a>
+         </li>
+       </ul>
+     </div>
+    </div>
+   </nav>
+
+   <h3 style="text-align: center; margin-top: 30px;">Differences between VAR, CONST and LET</h3>
+    
+    <div class="container">
+      <p style="font-weight: bold;">Var:</p>
+      <p style="font-weight: 700;"> Since the birth of JavaScript, var has been the most traditional method of declaring variables. Var-declared variables are function-scoped, which means their scope is constrained to the function in which they are specified. It will still be possible to access a variable that is declared using the var keyword inside of a block, such as a loop or conditional expression.
+
+        Here’s an example of using var: <br><br>
+
+        function exampleVar() {
+          if (true) {
+            var x = 10;
+          }
+          console.log(x); // Outputs 10
+        }
+
+        exampleVar();
+        In this example, x is declared using var inside the if block, but it is still accessible outside the block when we log it to the console.
+      </p>
+    </div>
+
+      <div class="container">
+        <p style="font-weight: bold;">let:</p>
+          <p style="font-weight: bold;">
+            let which was added in ECMAScript 6 (ES6), offers a more consistent and block-scoped method of declaring variables. let declarations limit variables to the block where they are specified. Because of this, let is especially helpful for preventing unintentional variable hoisting and lowering the possibility of scope-related errors.
+
+            Here’s an example of using let: <br><br>
+
+            function exampleLet() {
+              if (true) {
+                let y = 20;
+              }
+              console.log(y); // Throws a ReferenceError: y is not defined
+            }
+
+            exampleLet();
+            In this example, y is declared using let inside the if block, and it is not accessible outside the block. Attempting to log y outside the block results in a ReferenceError.
+          </p>
+      </div>
+
+      <div class="container">
+        <p style="font-weight: bold;">const:</p>
+        <p style="font-weight: bold;">
+          Constants (const), which are variables that cannot have their initial value changed, are declared using the new ES6 keyword const. Constrained to the block in which it is defined, const is block-scoped, like let. const is thus a good choice for declaring variables that shouldn’t change while a block of code is being executed.
+
+          Here’s an example of using const: <br><br>
+
+          function exampleConst() {
+            const z = 30;
+            z = 40; // Throws a TypeError: Assignment to constant variable
+          }
+
+          exampleConst();
+          In this example, z is declared using const and is immediately assigned the value 30. When we attempt to reassign it to 40, a TypeError is thrown because const variables cannot be reassigned.
+        </p>
+      </div>
+
+      <div class="container">
+        <p style="font-weight: bold;">Summary:</p>
+        <p style="font-weight: bold;">
+          In summary, var, let, and const are three different ways to declare variables in JavaScript, each with its own scope and use cases:
+        </p>
+        <ul style="font-weight: bold;">
+          <li>var is function-scoped and has been around since the early days of JavaScript.</li>
+          <li>let is block-scoped and was introduced in ES6, offering a more predictable scoping mechanism.</li>
+          <li>const is also block-scoped and is used to declare constants that cannot be reassigned after initialization.</li>
+        </ul>
+        <p style="font-weight: bold;">
+          Use let and const instead of var when writing JavaScript code to prevent unexpected scope problems and create more predictable, maintainable code. If you need to reassign a variable, use let; if you wish to declare constants, use const. You may build cleaner, more reliable JavaScript code by being aware of the distinctions between these three terms.
+        </p>
+      </div>
+    
+    
+    
+</body>
+</html>
